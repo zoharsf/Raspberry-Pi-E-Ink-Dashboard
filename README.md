@@ -37,7 +37,7 @@ And two local data sources:
 - The repository includes a `Config.py` file which holds all the configurations required to run the dashboard. In order for the dashboard to run correctly, all of the properties must be provided:
 	- `lon` and `lat` are used to gather weather information for the desired location
 	- `units` used to determine which temperature units will be used in the weather request. Options are `imperial` for Fahrenheit and `metric` for Celsius
-	- `unitLetter` used to determine which temperature letter will be used in the display. `F` for Fahrenheit and `C` for Celsius
+	- `unit_letter` used to determine which temperature letter will be used in the display. `F` for Fahrenheit and `C` for Celsius
 	- `open_weather_map_api_key` is the openweathermap.org API key.
 		> An account is required to access the openweathermap.org weather API, you can register **for free** [here](https://home.openweathermap.org/users/sign_up).
 	- `country` is used to query Covid-19 data and to load the flag icon so it **must** match the `<country_name>.jpeg`
