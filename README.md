@@ -1,6 +1,6 @@
 # Raspberry Pi E-Ink Dashboard
 ### Tri color e-ink dashboard written in Python 3.7, running on Raspberry Pi
-<img src="dashboard/desk.jpeg" alt="desk" width="40%"/> <img src="dashboard/dashboard.jpeg" alt="dashboard" width="40%"/>
+<img src="dashboard/desk.jpeg" alt="desk" height="350"/> <img src="dashboard/dashboard.jpeg" alt="dashboard" height="350"/>
 
 # What does it do?
 This dashboard displays information easily read at a glance:
