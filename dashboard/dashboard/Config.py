@@ -4,7 +4,7 @@ open_weather_map_api_key = 'your_api_key'
 lat = '40.71'
 lon = '-74.00'
 units = 'imperial'
-unitLetter = 'F'
+unit_letter = 'F'
 
 # covid
 country = 'us'
