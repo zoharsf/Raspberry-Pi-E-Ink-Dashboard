@@ -1,7 +1,7 @@
 import requests
 
 from dashboard.Image import draw_black, draw_red, get_enhanced_icon, h_red_image, small_font, medium_font
-from dashboard.Config import open_weather_map_api_key, lat, lon, units, unitLetter
+from dashboard.Config import open_weather_map_api_key, lat, lon, units, unit_letter
 
 
 def print_weather():
@@ -10,7 +10,7 @@ def print_weather():
 	h_red_image.paste(icon, (2, 32))
 	draw_red.text(
 		(50, 32),
-		weather['current_temp'][0:2] + 'º' + unitLetter,
+		weather['current_temp'][0:2] + 'º' + unit_letter,
 		font=medium_font,
 		fill=0)
 	draw_red.text(
