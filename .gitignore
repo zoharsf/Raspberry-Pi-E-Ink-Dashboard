@@ -1,0 +1,5 @@
+# .env
+**/.env
+
+# stop checking in pycache files
+**/*.pyc
