@@ -2,4 +2,4 @@
 **/.env
 
 # stop checking in pycache files
-**/__pycache__/*.pyc
+**/*.pyc
