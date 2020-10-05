@@ -35,7 +35,7 @@ And two local data sources:
 
 ## Code configuration
 - The assets used in this dashboard were chosen from [flaticon](https://www.flaticon.com/) for their aesthetics and appearances on the low resolution e-ink display used. The repository includes an icon for the US flag, if you would like to display Covid-19 data for a different country, an appropriate `<country_name>.jpeg` flag icon must be added under `dashboard/assets/covid`.
-- This project uses a `.env` file to store user specific values that you would not want to include in your git commits
+- This project uses a `.env` file to store user specific values that you would not want to include in your git commits. An example of this file and format can be found in the `dotenv-example` file. 
 	- `lon` and `lat` are used to gather weather information for the desired location
 	- `open_weather_map_api_key` is the openweathermap.org API key.
 		> An account is required to access the openweathermap.org weather API, you can register **for free** [here](https://home.openweathermap.org/users/sign_up).
