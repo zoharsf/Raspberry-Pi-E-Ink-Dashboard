@@ -1,0 +1,9 @@
+# Example .env file
+# To use this - save & rename this file as `.env` after updating the appropriate values below
+
+# Open Weather Map API Key
+open_weather_map_api_key = 'YOUR API KEY'
+
+# Home Lat / Lon
+lat = 'YOUR LATITUDE'
+lon = 'YOUR LONGITUDE'

@@ -27,6 +27,7 @@ And two local data sources:
 - [Speed-Test NPM package](https://github.com/sindresorhus/speed-test)
 - [Rubik font](https://fonts.google.com/specimen/Rubik) ([Raspberry Pi font installation instructions](https://raspberrytips.com/install-fonts-raspberry-pi/))
 > Any font may be used instead of Rubik, but not all fonts will look good on the display, especially in smaller sizes.
+- [python-dotenv](https://pypi.org/project/python-dotenv/)
 
 ## Hardware prerequisites
 - Raspberry Pi (this dashboard was run on a Raspberry Pi 3 Model B but will probably work on any version)
