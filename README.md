@@ -27,6 +27,7 @@ And two local data sources:
 - [Speed-Test NPM package](https://github.com/sindresorhus/speed-test)
 - [Rubik font](https://fonts.google.com/specimen/Rubik) ([Raspberry Pi font installation instructions](https://raspberrytips.com/install-fonts-raspberry-pi/))
 > Any font may be used instead of Rubik, but not all fonts will look good on the display, especially in smaller sizes.
+- [python-dotenv](https://pypi.org/project/python-dotenv/)
 
 ## Hardware prerequisites
 - Raspberry Pi (this dashboard was run on a Raspberry Pi 3 Model B but will probably work on any version)
@@ -34,12 +35,13 @@ And two local data sources:
 
 ## Code configuration
 - The assets used in this dashboard were chosen from [flaticon](https://www.flaticon.com/) for their aesthetics and appearances on the low resolution e-ink display used. The repository includes an icon for the US flag, if you would like to display Covid-19 data for a different country, an appropriate `<country_name>.jpeg` flag icon must be added under `dashboard/assets/covid`.
-- The repository includes a `Config.py` file which holds all the configurations required to run the dashboard. In order for the dashboard to run correctly, all of the properties must be provided:
+- This project uses a `.env` file to store user specific values that you would not want to include in your git commits. An example of this file and format can be found in the `dotenv-example` file. 
 	- `lon` and `lat` are used to gather weather information for the desired location
-	- `units` used to determine which temperature units will be used in the weather request. Options are `imperial` for Fahrenheit and `metric` for Celsius
-	- `unit_letter` used to determine which temperature letter will be used in the display. `F` for Fahrenheit and `C` for Celsius
 	- `open_weather_map_api_key` is the openweathermap.org API key.
 		> An account is required to access the openweathermap.org weather API, you can register **for free** [here](https://home.openweathermap.org/users/sign_up).
+- The repository includes a `Config.py` file which holds all the configurations required to run the dashboard. In order for the dashboard to run correctly, all of the properties must be provided:
+	- `units` used to determine which temperature units will be used in the weather request. Options are `imperial` for Fahrenheit and `metric` for Celsius
+	- `unit_letter` used to determine which temperature letter will be used in the display. `F` for Fahrenheit and `C` for Celsius
 	- `country` is used to query Covid-19 data and to load the flag icon so it **must** match the `<country_name>.jpeg`
 	- `[small\medium\large]_font_[size\name]` were chosen to fit the size of the e-ink display
 

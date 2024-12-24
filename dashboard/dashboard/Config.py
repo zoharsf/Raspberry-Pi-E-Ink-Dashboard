@@ -1,8 +1,12 @@
+from dotenv import load_dotenv
+load_dotenv()
+import os
+
 # weather
 icon_base_url = 'http://openweathermap.org/img/wn/'
-open_weather_map_api_key = 'your_api_key'
-lat = '40.71'
-lon = '-74.00'
+open_weather_map_api_key = os.environ.get("open_weather_map_api_key")
+lat = os.environ.get("lat")
+lon = os.environ.get("lon")
 units = 'imperial'
 unit_letter = 'F'
 
